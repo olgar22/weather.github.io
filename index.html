@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Comparisons of Latitude Relationships</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>    
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only" >Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" style="color:blue; font-size: 35px;">Latitude</a>
+          </div>
+           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="comparison.html">Comparison</a></li>
+              <li><a href="data.html">Data</a></li>
+              <li class="dropdown">
+                <a href="#"  class="dropdown-toggle" data-toggle="dropdown" role="button">Plots <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="listbox">
+                  <li><a href="visual1_temperature.html">Temperature</a></li>
+                  <li><a href="visual2_humidity.html">Humidity</a></li>
+                  <li><a href="visual3_clowdiness.html">Clowdiness</a></li>
+                  <li><a href="visual4_wind_speed.html">Windiness</a></li>
+ 
+                </ul>
+              </li>
+            </ul>
+           </div>
+        </div>
+ </nav>
+  
+  <br>
+  <be>
+
+  <div class="container">
+    <div class="row">
+               <div class="col-sm-6 ">
+                   
+                     <div class="box black">
+                       <h3 style="color:Green"><b>Summary: Latitude vs. X</b></h3>
+                        <img style="float:left;height:25%;width:25%;" src="Fig1.png?raw=true" alt="Temps"   height="180" width="180" >
+                        <h6 style = "color:Black" ><b><p>The purpose of this project was to analyze how weather changes as you get closer to the equator.<br/><b></b>
+                           To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a 
+                          dataset on over 500 cities.<br/><b></b></p>
+                          <p> After assembling the dataset, we used Matplotlib to plot various
+                        aspects of the weather vs. latitude. Factors who  looked at included: 
+                       temperature,cloudness,wind speed, and humidity. <br/> <b></b><p>This site provides the source data and 
+                     visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed. </p></b>  </h6>
+                     </div>
+                  
+               </div>
+            
+              <div class="col-sm-6">
+
+                <a href="https://www.yahoo.com"> 
+                <img src="Fig1.png?raw=true" alt="Temp"  height="120" width="120" >  </a>
+  
+                <a href="https://www.yahoo.com">
+                <img src="Fig2.png?raw=true" alt="Humidity"  height="120" width="120" ></a>
+     
+                <a href="https://www.yahoo.com">
+                <img src="Fig3.png?raw=true" alt="Clowdiness"  height="120" width="120" ></a>
+     
+                <a href="https://www.yahoo.com"> 
+                <img src="Fig4.png?raw=true" alt="Wind Speed" height="120" width="120" >  </a>
+              </div>
+            
+      </div>
+    
+    </div>
+  
+</body>
+
+</html>
