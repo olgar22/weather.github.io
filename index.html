@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+ <style >
+
+
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color:white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+</style>
+  <title>Home Page: Summary</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>    
+ 
+  <ul class="nav nav-tabs">
+          <li class="nav-item">
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                </button>
+                <a class="navbar-brand" style="color:blue; font-size: 35px;">Lattitude</a>
+              </div>
+
+
+              <h4>  Latitude  </h4>
+           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="visual1_temperature.html">Plots: Max Temperature</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="visual2_humidity.html">Plots: Humidity</a>
+          </li>
+            <li class="nav-item">
+                <a class="nav-link" href="visual3_clowdiness.html/">Plots: Clowdiness</a>
+          </li>
+          <li class="nav-item">
+                  <a class="nav-link" href="visual4_wind_speed.html/">Plots: Wind Speed</a>
+           </li>
+          <li class="nav-item">
+                    <a class="nav-link" href="comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="https://www.google.com/">Data</a>
+            </li>
+          <li>
+            <div class="dropdown">
+              <button class="dropbtn">Options 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="https://www.google.com">Temperature</a>
+                  <a href="https://www.google.com">Clowdiness</a>
+                  <a href="https://www.google.com">Humidity</a>
+                </div>  
+               
+             </div>
+            </li>        
+       </ul>
+  
+  <br>
+  <be>
+
+  <div class="container">
+    <div class="row">
+               <div class="col-sm-6 ">
+                   
+                     <div class="box black">
+                       <h3 style="color:Green"><b>Summary: Latitude vs. X</b></h3>
+                        <img style="float:left;height:25%;width:25%;" src="Fig1.png?raw=true" alt="Temps"   height="180" width="180" >
+                        <h6 style = "color:Black" ><b><p>The purpose of this project was to analyze how weather changes as you get closer to the equator.<br/><b></b>
+                           To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a 
+                          dataset on over 500 cities.<br/><b></b></p>
+                          <p> After assembling the dataset, we used Matplotlib to plot various
+                        aspects of the weather vs. latitude. Factors who  looked at included: 
+                       temperature,cloudness,wind speed, and humidity. <br/> <b></b><p>This site provides the source data and 
+                     visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed. </p></b>  </h6>
+                     </div>
+                  
+               </div>
+            
+              <div class="col-sm-6">
+
+                <a href="https://www.yahoo.com"> 
+                <img src="Fig1.png?raw=true" alt="Temp"  height="120" width="120" >  </a>
+  
+                <a href="https://www.yahoo.com">
+                <img src="Fig2.png?raw=true" alt="Humidity"  height="120" width="120" ></a>
+     
+                <a href="https://www.yahoo.com">
+                <img src="Fig3.png?raw=true" alt="Clowdiness"  height="120" width="120" ></a>
+     
+                <a href="https://www.yahoo.com"> 
+                <img src="Fig4.png?raw=true" alt="Wind Speed" height="120" width="120" >  </a>
+              </div>
+            
+      </div>
+    
+    </div>
+  
+</body>
+
+</html>
